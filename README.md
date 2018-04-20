@@ -14,8 +14,9 @@ Some further observations:
 Not convinced the Windspeed / Direction are accurate in summary on the application (e.g. Weds 5km wind actual 1km, Thurs 8km actual 2km). If I understand
 correctly, then the 'Dominant' item would be the one with the maximum value. I would question this to understand further because the application looks
 to have some bugs.
+
 My test data was taken as suggested from src/data:
-"There is test data for a number of locations, found in the folder src/data" - however this fails against the web application for tests on Wednesday 21st. 
+"There is test data for a number of locations, found in the folder src/data" - however this fails against the web application for tests on Wednesday 21st. It would prudent to question this in terms of whether we have a defect, or whether I have simply misunderstood the requirement. It would be wrong to make the test fit the functionality.
 
 In each case, the data values need to be validated against either the json file or ultimately the website. I would create some json parsing
 utility to take the data directly from the file. Possibly using JSONPath or maybe bind the file to a class using the Jackson libraries to marshall and 
